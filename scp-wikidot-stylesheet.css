@@ -31,7 +31,7 @@
     --filter-invert-val: 0.75;
 }
 
-#container, #page-title, #page-content {
+#container, #page-title, #page-content, h1 {
     background: var(--bg-body)!important;
     color: var(--color-body-text)!important;
 }
