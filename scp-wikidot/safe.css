@@ -1,63 +1,62 @@
-:root {
+:root{
     --desat-dark-blue: #28364f;
-    --dark-blue: #1b314b;
+    --dark-blue:#1b314b;
     --desat-blue: #375a7f;
     --desat-light-blue: #5383e8;
     --desat-dark-red: #5d383f;
-    --light-red: #e84057;
-    --desat-light-red: #D47F7F;
+    --desat-light-red: #e84057;
     --desat-dark-green: #506633;
-    --desat-light-green: #90b181;
-    --tint-green: #dbe2d2;
+    --desat-light-green: #dbe2d2;
     --desat-dark-purple: #4a3366;
     --desat-dark-orange: #a36417;
-    --light-yellow: #c0d033;
-    --desat-light-yellow: #d7d77c;
     --cyan: #20c6df;
-    --desat-cyan: #559eaa;
+    --desat-cyan:#559eaa;
     --turquoise: #0e8a9e;
-    --desat-turquoise: #32717b;
-    --magenta: #df20df;
-    --desat-magenta: #a5a;
+    --desat-turquoise:#32717b;
+    --magenta:#df20df;
+    --desat-magenta:#a5a;
     --white: #dfdfdf;
     --black: #060606;
     --very-dark-grey: #111;
     --dark-grey: #323238;
     --grey: #45454d;
     --light-grey: #aaa;
-    --body-background-color: var(--black);
-    --body-embed-background-color: var(--very-dark-grey);
-    --post-head-background-color: var(--dark-grey);
-    --body-text-color: var(--light-grey);
-    --active-link-color: var(--cyan);
-    --hover-link-color: var(--turquoise);
-    --visited-link-color: var(--magenta);
-    --filter-invert-value: 0.85;
+    --bg-body: var(--black);
+    --bg-body-embed: var(--very-dark-grey);
+    --bg-post-head: var(--dark-grey);
+    --color-body-text: var(--light-grey);
+    --color-link: var(--cyan);
+    --color-link-hover: var(--turquoise);
+    --color-link-visited: var(--magenta);
+    --filter-invert-val: 0.75;
 }
 
 #container, #page-title, #page-content, h1, #content-wrap {
-    background: var(--body-background-color)!important;
-    color: var(--body-text-color)!important;
+    background: var(--bg-body)!important;
+    color: var(--color-body-text)!important;
 }
-#side-bar > .side-block, .blockquote, .scp-image-block, .description-block.well, div.box:not(.art), div.box.newsbox > div, .INT-box, .scp-image-caption, #top-bar, .post .long, .page-rate-widget-box  {
-    background: var(--body-embed-background-color)!important;
-    color: var(--body-text-color)!important;
+#side-bar, #side-bar > .side-block, .blockquote, .scp-image-block, .description-block.well, div.box:not(.art), div.box.newsbox > div, .INT-box, .scp-image-caption, #top-bar, .post .long, .page-rate-widget-box, blockquote  {
+    background: var(--bg-body-embed)!important;
+    color: var(--color-body-text)!important;
 }
 
-.post .long .head {
-    background: var(--post-head-background-color)!important;
-    color: var(--body-text-color)!important;
+.post .long .head, #login-status > a, #search-top-box, #toc {
+    background: var(--bg-post-head)!important;
+    color: var(--color-body-text)!important;
 }
 .side-block .heading {
-  color: var(--body-text-color)!important;
-  border-bottom: solid 1px var(--body-text-color)!important;
+  color: var(--color-body-text)!important;
+  border-bottom: solid 1px var(--color-body-text)!important;
     
 }
+.rate-points {
+    color: var(--color-body-text)!important
+}
 #side-bar > .side-block, blockquote, .scp-image-block, .description-block.well, div.box:not(.art), div.box.newsbox > div, .INT-box, .post .long {
-    box-shadow: 0 2px 6px rgba(var(--body-text-color),.25)!important;
+    box-shadow: 0 2px 6px rgba(var(--color-body-text),.25)!important;
 }
 #side-bar > .side-block, blockquote, .scp-image-block, .description-block.well, div.box:not(.art), div.box.newsbox > div, .INT-box {
-    border: 1px solid var(--body-text-color)!important;
+    border: 1px solid var(--color-body-text)!important;
 }
 .post .long {
     border-radius: 5px 5px 5px 5px;
@@ -67,19 +66,19 @@
     padding-bottom:1em!important;
 }
 #page-title a, .side-block .menu-item{
-    color: var(--body-text-color)!important;
+    color: var(--color-body-text)!important;
 }
 a, .post .long .options a, .side-block .heading a, .side-block .menu-item a, #header a{
-    color: var(--active-link-color)!important;
+    color: var(--color-link)!important;
 }
 a:hover{
-    color: var(--hover-link-color)!important;
+    color: var(--color-link-hover)!important;
 }
 a:visited, .side-block .heading a:visited, .side-block .menu-item a:visited {
-    color: var(--visited-link-color)!important;
+    color: var(--color-link-visited)!important;
 }
 
 
 iframe {
-    filter: invert(var(--filter-invert-value));
+    filter: invert(var(--filter-invert-val));
 }
