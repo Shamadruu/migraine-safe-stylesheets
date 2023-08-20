@@ -3,41 +3,44 @@
 @namespace    MSSS
 @author       Jackson Ayres
 @description  Migraine safe theme for fanfiction.net
-@version      1.0
+@version      1.01
 ==/UserStyle== */
 @-moz-document domain("fanfiction.net") {
     :root{
-    --desat-dark-blue: #28364f;
-    --dark-blue:#1b314b;
-    --desat-blue: #375a7f;
-    --desat-light-blue: #5383e8;
-    --desat-dark-red: #5d383f;
-    --desat-light-red: #e84057;
-    --desat-dark-green: #506633;
-    --desat-light-green: #dbe2d2;
-    --desat-dark-purple: #4a3366;
-    --desat-dark-orange: #a36417;
-    --cyan: #20c6df;
-    --desat-cyan:#559eaa;
-    --turquoise: #0e8a9e;
-    --desat-turquoise:#32717b;
-    --magenta:#df20df;
-    --desat-magenta:#a5a;
-    --white: #dfdfdf;
-    --black: #060606;
-    --very-dark-grey: #111;
-    --dark-grey: #323238;
-    --grey: #45454d;
-    --light-grey: #aaa;
-    --bg-body: var(--black);
-    --bg-body-embed: var(--very-dark-grey);
-    --bg-post-head: var(--dark-grey);
-    --color-body-text: var(--light-grey);
-    --color-link: var(--cyan);
-    --color-link-hover: var(--turquoise);
-    --color-link-visited: var(--magenta);
-    --filter-invert-val: 0.75;
-}
+        --desat-dark-blue: #28364f;
+        --dark-blue:#1b314b;
+        --desat-blue: #375a7f;
+        --desat-light-blue: #5383e8;
+        --desat-dark-red: #5d383f;
+        --desat-light-red: #e84057;
+        --desat-dark-green: #506633;
+        --desat-light-green: #dbe2d2;
+        --desat-dark-purple: #4a3366;
+        --desat-dark-orange: #a36417;
+        --cyan: #20c6df;
+        --desat-cyan:#559eaa;
+        --turquoise: #0e8a9e;
+        --desat-turquoise:#32717b;
+        --magenta:#df20df;
+        --desat-magenta:#a5a;
+        --white: #dfdfdf;
+        --black: #060606;
+        --very-dark-grey: #111;
+        --dark-grey: #323238;
+        --grey: #45454d;
+        --light-grey: #aaa;
+        --bg-body: var(--black);
+        --bg-body-embed: var(--very-dark-grey);
+        --bg-post-head: var(--dark-grey);
+        --color-body-text: var(--light-grey);
+        --color-link: var(--cyan);
+        --color-link-hover: var(--turquoise);
+        --color-link-visited: var(--magenta);
+        --filter-invert-val: 0.75;
+    }
+    strong {
+        font-size: 1.25em;
+    }
 
     #content-parent, #content_parent, #top {
         background: var(--bg-body)!important;
